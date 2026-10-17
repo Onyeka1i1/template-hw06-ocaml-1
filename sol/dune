@@ -1,0 +1,6 @@
+(executables
+ (public_names hw06 - - -)
+ (names count_up evens_only pairs quadratic_formula)
+ (libraries src)
+ (preprocess
+  (pps ppx_expect ppx_sexp_conv)))
