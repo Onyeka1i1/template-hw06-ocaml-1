@@ -1,4 +1,4 @@
-open! Src.Cs17_setup_hw06
+open! Src.Cs17_setup_hw06;;
 
 (* 
 pairs : list(string) -> (string * string) list

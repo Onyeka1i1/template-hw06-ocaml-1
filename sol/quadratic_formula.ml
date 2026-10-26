@@ -1,4 +1,4 @@
-open! Src.Cs17_setup_hw06
+open! Src.Cs17_setup_hw06;;
 
 (* 
 quadratic_formula : float * float * float -> float * float
@@ -15,5 +15,5 @@ let quadratic_formula = function
                 (-. b +. sqrt (b *. b -. 4.0 *. a *. c)) /. (2.0 *. a)) ;;
  
 (* Test Cases for quadratic_formula *)
-check_expect_float (first (quadratic_formula (1.0, -5.0, 6.0)), 2.0, "x^2 - 5x + 6, first answer") ;;
-check_expect_float (second (quadratic_formula (1.0, -5.0, 6.0)), 3.0, "x^2 - 5x + 6, second answer") ;;
+check_expect_float (fst (quadratic_formula (1.0, -5.0, 6.0)), 2.0, "x^2 - 5x + 6, first answer") ;;
+check_expect_float (snd (quadratic_formula (1.0, -5.0, 6.0)), 3.0, "x^2 - 5x + 6, second answer") ;;

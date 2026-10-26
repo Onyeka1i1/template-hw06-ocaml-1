@@ -1,4 +1,4 @@
-open! Src.Cs17_setup_hw06
+open! Src.Cs17_setup_hw06;;
 
 (* evens_only : list(int) -> list(int)
     Input(s): alon ~ an int list
@@ -14,7 +14,7 @@ open! Src.Cs17_setup_hw06
 
 let rec evens_only = function
   | [] -> []
-  | first :: rest -> if (first / 2) * 2 = first then first :: evens_only rest
+  | fst :: rest -> if (fst / 2) * 2 = fst then fst :: evens_only rest
                      else evens_only rest ;;
 
 (* Test Cases for evens_only *)
